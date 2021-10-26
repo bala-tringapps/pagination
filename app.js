@@ -38,8 +38,8 @@ function DisplayList (items, wrapper, rows_per_page, page) {
 	let start = rows_per_page * page;
 	let end = start + rows_per_page;
 	let paginatedItems = items.slice(start, end);
-
-	for (let i = 0; i < paginatedItems.length; i++) {
+	let list_len = paginatedItems.length;
+	for (let i = 0; i < list_len; i++) {
 		let item = paginatedItems[i];
 
 		let item_element = document.createElement('div');
